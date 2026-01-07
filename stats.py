@@ -16,10 +16,10 @@ def count_characters(text):
 def sort_on(item):
     return item["num"]
 
-def print_report(count_characters(text)):
+def print_report(dictionary):
     items = []
-    for key in my_dict:
-        num = my_dict[key]
+    for key in dictionary:
+        num = dictionary[key]
         new_dict = {'letter': key, 'num': num}
         items.append(new_dict)
     items.sort(reverse=True, key=sort_on)
